@@ -1,11 +1,8 @@
-# php_sample
-php resources
+# SDKのインストール
 
-Installation
-Requirements: PHP 7.1.0 or higher
+要件: PHP 7.1.0 以降
 
-Composer
-To install the API client with composer, add the following to your composer.json file:
+Composer を使用して API クライアントをインストールするには、composer.json ファイルに以下を追加します。
 
 {
 "require":
@@ -13,8 +10,11 @@ To install the API client with composer, add the following to your composer.json
     "bitmovin/bitmovin-api-sdk-php": "1.172.0"
   }
 }
-Then run php composer.phar install
 
-OR
+次に php composer.phar install を実行します。
 
-run the following command: php composer.phar require bitmovin/bitmovin-api-sdk-php:1.172.0
+または
+
+次のコマンドを実行します
+
+php composer.phar require bitmovin/bitmovin-api-sdk-php:1.172.0
