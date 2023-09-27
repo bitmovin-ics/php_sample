@@ -7,7 +7,7 @@ Composer を使用して API クライアントをインストールするには
 {
 "require":
   {
-    "bitmovin/bitmovin-api-sdk-php": "1.172.0"
+    "bitmovin/bitmovin-api-sdk-php": "*"
   }
 }
 ```
@@ -17,7 +17,7 @@ Composer を使用して API クライアントをインストールするには
 
 次のコマンドを実行します
 
-php composer.phar require bitmovin/bitmovin-api-sdk-php:1.172.0
+php composer.phar require bitmovin/bitmovin-api-sdk-php:*
 
 # Playerの導入
 こちら公式よりダウンロードのほどお願い致します。
