@@ -1,6 +1,6 @@
 <?php
 
-require '../vendor/autoload.php';
+require './vendor/autoload.php';
 
 use BitmovinApiSdk\BitmovinApi;
 use BitmovinApiSdk\Common\BitmovinApiException;
@@ -38,7 +38,7 @@ use BitmovinApiSdk\Models\StreamMode;
 use BitmovinApiSdk\Models\StreamSelectionMode;
 use BitmovinApiSdk\Models\Task;
 
-const TEST_NAME = "h264-aac-fixed-mp4-clear-hls";
+const TEST_NAME = "h264-aac-fixed-mp4-clear-hls-on-aws";
 
 const BITMOVIN_API_KEY="{YOUR API KEY}";
 const BITMOVIN_TENANT_ORG_ID="{YOUR ORG ID}";
