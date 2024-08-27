@@ -17,8 +17,8 @@ Composer を使用して API クライアントをインストールするには
 
 次のコマンドを実行します
 
-php composer.phar require bitmovin/bitmovin-api-sdk-php:*
+> php composer.phar require bitmovin/bitmovin-api-sdk-php
 
-# Playerの導入
-こちら公式よりダウンロードのほどお願い致します。
-https://github.com/bitmovin/bitmovin-player-web-samples
+SDK を更新する際は次のコマンドを実行します。
+
+> php composer.phar update bitmovin/bitmovin-api-sdk-php
