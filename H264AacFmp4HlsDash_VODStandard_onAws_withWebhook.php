@@ -115,10 +115,10 @@ try {
         ->encoderVersion('STABLE'));
 
     // Create Webhook for FINISHED and ERROR
-    $finished_webhook = $bitmovin_api->notifications->webhooks->encoding->encodings->finished->create((new Webhook)
+    $finished_webhook = $bitmovin_api->notifications->webhooks->encoding->encodings->finished->createByEncodingId($encoding->id, (new Webhook)
         ->url(WEBHOOK_ENDPOINT)
         ->method(WebhookHttpMethod::POST()));
-    $error_webhook = $bitmovin_api->notifications->webhooks->encoding->encodings->error->create((new Webhook)
+    $error_webhook = $bitmovin_api->notifications->webhooks->encoding->encodings->error->createByEncodingId($encoding->id, (new Webhook)
         ->url(WEBHOOK_ENDPOINT)
         ->method(WebhookHttpMethod::POST()));
 
