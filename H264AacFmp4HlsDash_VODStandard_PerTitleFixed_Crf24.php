@@ -270,7 +270,7 @@ function createHlsManifest(Encoding $encoding, Output $output, string $output_pa
     foreach ($fmp4_muxings->items as $muxing) {
         $stream = $bitmovin_api->encoding->encodings->streams->get($encoding->id, $muxing->streams[0]->streamId);
 
-        if (strpos($stream->mode->getValue(), 'PER_TITLE_TEMPLATE')) {
+        if (strncmp($stream->mode->getValue(), 'PER_TITLE_TEMPLATE', strlen('PER_TITLE_TEMPLATE')) === 0) {
             continue;
         }
 
@@ -331,7 +331,7 @@ function createDashManifest(Encoding $encoding, Output $output, string $output_p
     foreach ($fmp4_muxings->items as $muxing) {
         $stream = $bitmovin_api->encoding->encodings->streams->get($encoding->id, $muxing->streams[0]->streamId);
 
-        if (strpos($stream->mode->getValue(), 'PER_TITLE_TEMPLATE')) {
+        if (strncmp($stream->mode->getValue(), 'PER_TITLE_TEMPLATE', strlen('PER_TITLE_TEMPLATE')) === 0) {
             continue;
         }
 
